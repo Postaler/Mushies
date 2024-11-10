@@ -12,9 +12,9 @@ body {
     background-size: cover; /* Ensures the image covers the entire screen */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
-    background-image: url('img/gospel.png'); /* Replace with your image URL */
+    background-image: url('Img/gospel.png'); /* Replace with your image URL */
     background-size: 100% auto;
-    background-position: 20% 55%;
+    background-position: 20% 88%;
 }
 
 header {
