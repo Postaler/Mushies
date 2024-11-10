@@ -1,0 +1,64 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Background Image */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-image: url('img/gospel.png'); /* Replace with your image URL */
+    background-size: 100% auto;
+    background-position: 20% 55%;
+}
+
+header {
+    text-align: center; /* Centers text horizontally inside the header */
+    padding: 4rem 1rem;  /* Adds space around the content */
+}
+
+header h1,
+header p {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 0.5rem 1rem; /* Adds space around the text */
+    border-radius: 8px; /* Optional: Rounds the corners of the background */
+    display: block; /* Makes sure the elements are block-level and stack */
+    margin: 0 auto; /* Centers the block-level elements horizontally */
+    width: fit-content; /* Ensures the width is just as wide as the content */
+}
+
+header p {
+    margin-top: 1rem; /* Adds space between h1 and p */
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f4f4f4;
+}
