@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
+
 /* Body Styling with Background Image */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
     line-height: 1.6;
     background-size: cover; /* Ensures the image covers the entire screen */
     background-position: center; /* Centers the image */
@@ -16,6 +17,32 @@ body {
     background-size: 100% auto;
     background-position: 20% 88%;
 }
+@media (max-width: 500px) {
+    body {
+        background-size: cover; /* Ensure it still covers the screen */
+        background-position: center center; /* Centers the image properly */
+    }
+}
+
+@media all and (min-width:1200px){
+
+    body {
+        background-size: cover; /* Ensure it still covers the screen */
+        background-position: center center; /* Centers the image properly */
+    }
+
+}
+
+@media all and (min-width:501px) and (max-width:1199px){
+
+
+body {
+        background-size: cover; /* Ensure it still covers the screen */
+        background-position: center center; /* Centers the image properly */
+    }
+
+}
+
 
 header {
     text-align: center; /* Centers text horizontally inside the header */
@@ -24,7 +51,7 @@ header {
 
 header h1,
 header p {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgb(161 0 136 / 91%); /* Semi-transparent background */
     color: white; /* Text color */
     padding: 0.5rem 1rem; /* Adds space around the text */
     border-radius: 8px; /* Optional: Rounds the corners of the background */
@@ -37,6 +64,71 @@ header p {
     margin-top: 1rem; /* Adds space between h1 and p */
 }
 
+
+h2  {
+    background-color: rgb(161 0 136 / 85%); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 0.5rem 1rem; /* Adds space around the text */
+    border-radius: 8px; /* Optional: Rounds the corners of the background */
+    display: block; /* Makes sure the elements are block-level and stack */
+    margin: 0 auto; /* Centers the block-level elements horizontally */
+    width: fit-content; /* Ensures the width is just as wide as the content */
+    margin-bottom: 10px;
+}
+
+
+#about ul {
+    background-color: rgb(161 0 136 / 85%); /* Semi-transparent background */
+    color: white; /* Text color */
+    border-radius: 8px;
+    padding-left: 20px; /* Adjust indentation */
+    margin: 0 auto; /* Centers the list horizontally */
+    max-width: 600px; /* Optional: Set a max width */
+}
+
+#about ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+
+
+.service {
+    position: relative; /* Allows absolute positioning inside the container */
+    padding: 20px;
+
+}
+
+.service ul {
+    list-style-position: inside; /* Ensures the bullet points are inside the container */
+    padding-left: 20px; /* Adds some indentation */
+    margin: 0; /* Removes the default margin */
+}
+
+.service li {
+    text-align: left; /* Ensures the text is aligned to the left */
+    margin-bottom: 10px; /* Adds space between the list items */
+}
+
+
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.service p {
+    text-align: justify; /* Makes the paragraph text look more organized */
+}
+
+.highlight {
+    display: block; /* Makes the highlighted text appear on its own line */
+    text-align: center; /* Centers the text */
+    font-size: 1.2rem; /* Adjust font size for emphasis */
+    font-weight: bold; /* Emphasizes the text */
+    margin-bottom: 10px; /* Adds space after the highlighted text */
+}
+
+
+
 /* Section Styling */
 section {
     padding: 2rem;
@@ -44,7 +136,7 @@ section {
 }
 
 section h2 {
-    color: #333;
+    color: #fff;
 }
 
 /* Services Section */
@@ -60,5 +152,40 @@ section h2 {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background: #f4f4f4;
+    background:  rgb(161 0 136 / 85%);
+
 }
+
+.service {
+    color: #fff;
+
+
+}
+
+
+@media (max-width: 800px) {
+    .services {
+        display: block; /* Stacks the sections vertically */
+    }
+
+    .service {
+        margin-bottom: 20px; /* Adds space between each section */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
