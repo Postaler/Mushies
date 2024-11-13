@@ -11,36 +11,31 @@ body {
     font-family: 'Yusei Magic', sans-serif;
     line-height: 1.6;
     background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
     background-image: url('Img/gospel.png'); /* Replace with your image URL */
-    background-size: 100% auto;
-    background-position: 20% 88%;
+    background-size: 100% auto; /* Keep the width 100%, adjust height */
+    background-position: center -100px; 
 }
+
 @media (max-width: 500px) {
     body {
-        background-size: cover; /* Ensure it still covers the screen */
-        background-position: center center; /* Centers the image properly */
+        background-size: cover;
+        background-position: center top; /* Center horizontally and align to the top */
     }
 }
 
-@media all and (min-width:1200px){
-
+@media (min-width: 1200px) {
     body {
-        background-size: cover; /* Ensure it still covers the screen */
-        background-position: center center; /* Centers the image properly */
+        background-size: cover;
+        background-position: center top -142px; /* Center horizontally and align to the top */
     }
-
 }
 
-@media all and (min-width:501px) and (max-width:1199px){
-
-
-body {
-        background-size: cover; /* Ensure it still covers the screen */
-        background-position: center center; /* Centers the image properly */
+@media (min-width: 501px) and (max-width: 1199px) {
+    body {
+        background-size: cover;
+        background-position: center top; /* Center horizontally and align to the top */
     }
-
 }
 
 
@@ -172,20 +167,3 @@ section h2 {
         margin-bottom: 20px; /* Adds space between each section */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
